@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = "https://calvin-ping.vercel.app";
+const siteUrl = "https://calvin-ping-portfolio.vercel.app";
 const title = "Calvin Ping";
 const description = "Computer Science @ UT Austin";
 
