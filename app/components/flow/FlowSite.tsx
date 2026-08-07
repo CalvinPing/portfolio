@@ -355,7 +355,7 @@ export function FlowSite() {
                 <div className="orbit-card">
                   <div className="orbit-card-inner">
                     <h3>Fluent PDF</h3>
-                    <p>Client-side PDF toolkit — merge, split, edit, fill, protect.</p>
+                    <p>Client-side PDF toolkit (merge, split, edit, protect) — runs entirely offline as an installable PWA.</p>
                     <div className="orbit-card-actions">
                       <a className="btn-solid" href="https://fluent-pdf.vercel.app/" target="_blank" rel="noopener noreferrer">
                         Visit site ↗
@@ -372,7 +372,7 @@ export function FlowSite() {
                   </div>
                 </div>
               </div>
-              <div className="orbit-item" style={{ "--angle-offset": "90deg" } as React.CSSProperties}>
+              <div className="orbit-item" style={{ "--angle-offset": "60deg" } as React.CSSProperties}>
                 <div className="orbit-card">
                   <div className="orbit-card-inner exp-orbit-card">
                     <p className="exp-dates">Jun 2025 – Aug 2025</p>
@@ -384,11 +384,11 @@ export function FlowSite() {
                   </div>
                 </div>
               </div>
-              <div className="orbit-item" style={{ "--angle-offset": "180deg" } as React.CSSProperties}>
+              <div className="orbit-item" style={{ "--angle-offset": "120deg" } as React.CSSProperties}>
                 <div className="orbit-card">
                   <div className="orbit-card-inner">
                     <h3>RoleRadar</h3>
-                    <p>Live SWE roles pulled straight from company ATS APIs.</p>
+                    <p>Live SWE roles aggregated from 150+ companies&apos; ATS APIs, auto-refreshed via Cloudflare Cron.</p>
                     <div className="orbit-card-actions">
                       <a className="btn-solid" href="https://roleradar.pages.dev/" target="_blank" rel="noopener noreferrer">
                         Visit site ↗
@@ -405,14 +405,44 @@ export function FlowSite() {
                   </div>
                 </div>
               </div>
-              <div className="orbit-item" style={{ "--angle-offset": "270deg" } as React.CSSProperties}>
+              <div className="orbit-item" style={{ "--angle-offset": "180deg" } as React.CSSProperties}>
                 <div className="orbit-card">
                   <div className="orbit-card-inner exp-orbit-card">
                     <p className="exp-dates">Jun 2020 – May 2025</p>
-                    <h3>Real Estate Data &amp; Tech Assistant</h3>
+                    <h3>Real Estate Data &amp; Technology Assistant</h3>
                     <p className="exp-company">Austin Central Realty</p>
                     <p className="exp-desc">
                       Automated data workflows and dashboards, cutting manual effort by 25%.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="orbit-item" style={{ "--angle-offset": "240deg" } as React.CSSProperties}>
+                <div className="orbit-card">
+                  <div className="orbit-card-inner">
+                    <h3>Connected Horizons</h3>
+                    <p>Broadband access platform for underserved communities — Flask/SQLAlchemy APIs + geographic data. Team project, archived.</p>
+                    <div className="orbit-card-actions">
+                      <a
+                        className="btn-text"
+                        href="https://github.com/CalvinPing/ConnectedHorizons"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="orbit-item" style={{ "--angle-offset": "300deg" } as React.CSSProperties}>
+                <div className="orbit-card">
+                  <div className="orbit-card-inner exp-orbit-card">
+                    <p className="exp-dates">Aug 2026 – Present</p>
+                    <h3>Brokerage Website</h3>
+                    <p className="exp-company">Austin Central Realty</p>
+                    <p className="exp-desc">
+                      Building a full-stack site with live MLS listings via SimplyRETS, backed by Supabase/PostgreSQL.
                     </p>
                   </div>
                 </div>
