@@ -116,7 +116,6 @@ export function FlowSite() {
     let speed = 1;
     let speedTarget = 1;
     let lastT: number | null = null;
-    let depthFrame = 0;
     let orbitRunning = false;
     let rafId = 0;
 
@@ -126,7 +125,7 @@ export function FlowSite() {
         const front = -Math.cos(rad);
         const scale = 1 + front * 0.14;
         const opacity = 0.8 + ((front + 1) / 2) * 0.2;
-        item.style.zIndex = front > 0 ? "3" : "0";
+        item.style.zIndex = String(Math.round((front + 1) * 50) + 1);
         orbitCards[i].style.setProperty("--depth-scale", scale.toFixed(3));
         orbitCards[i].style.opacity = opacity.toFixed(2);
       });
@@ -155,8 +154,7 @@ export function FlowSite() {
       }
       orbitRing!.style.setProperty("--ring-angle", ringAngle + "deg");
 
-      depthFrame = (depthFrame + 1) % 3;
-      if (depthFrame === 0) updateDepth();
+      updateDepth();
 
       rafId = requestAnimationFrame(orbitTick);
     }
