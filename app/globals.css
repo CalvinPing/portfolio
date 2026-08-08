@@ -820,15 +820,46 @@ body {
     height: 260px;
   }
   .layout[data-mode="orbit"] {
-    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+  .layout[data-mode="orbit"] .portrait-stage {
+    position: relative;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    transform: none;
+    height: 220px;
+    margin: 0 auto 1rem;
+    order: -1;
+  }
+  .nav-arrows-row {
+    display: none !important;
+  }
+  .orbit-wrap {
+    position: static;
+    inset: auto;
+  }
+  .orbit-ring {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
   }
   .orbit-item {
-    transform: translate(0, -50%) rotate(calc(var(--ring-angle, 0deg) + var(--angle-offset, 0deg))) translateY(-190px);
-    width: 120px;
-    margin-left: -60px;
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    transform: none;
   }
   .orbit-card {
-    transform: rotate(calc(-1 * (var(--ring-angle, 0deg) + var(--angle-offset, 0deg)))) scale(var(--depth-scale, 1));
+    transform: none;
+    opacity: 1 !important;
   }
 }
 
