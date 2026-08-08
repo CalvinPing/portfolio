@@ -774,6 +774,12 @@ body {
 .orbit-ring.paused .orbit-item:nth-of-type(4) .orbit-card-inner {
   animation-delay: 1.2s;
 }
+.orbit-ring.paused .orbit-item:nth-of-type(5) .orbit-card-inner {
+  animation-delay: 1.6s;
+}
+.orbit-ring.paused .orbit-item:nth-of-type(6) .orbit-card-inner {
+  animation-delay: 2s;
+}
 
 .site-footer {
   position: relative;
