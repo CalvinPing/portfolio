@@ -125,7 +125,7 @@ export function FlowSite() {
         const front = -Math.cos(rad);
         const scale = 1 + front * 0.14;
         const opacity = 0.8 + ((front + 1) / 2) * 0.2;
-        item.style.zIndex = String(Math.round((front + 1) * 50) + 1);
+        item.style.zIndex = String(Math.round(front * 50));
         orbitCards[i].style.setProperty("--depth-scale", scale.toFixed(3));
         orbitCards[i].style.opacity = opacity.toFixed(2);
       });
